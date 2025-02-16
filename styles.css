@@ -1,0 +1,456 @@
+
+
+@import url("https://fonts.googleapis.com/css2?family=Delius&family=Delius+Unicase:wght@400;700&family=Knewave&display=swap");
+
+/* Body */
+body {
+    cursor: url(assets/icon/cursor-body.cur), auto;
+  font-family: "Delius", cursive;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/*Comtainer */
+.container {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 10px 10px 12px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Folders */
+.folders {
+  display: flex;
+  background-color: #fff;
+  border: 5px solid #e56ab5;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Gambar Folders */
+.image img {
+  width: 200px;
+  height: 285px;
+  border-radius: 10px;
+}
+
+/* Pasword */
+.password {
+  margin-left: 20px;
+}
+
+/* Display */
+.display {
+  width: 80%;
+  height: 50px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.display svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  color: #d1548f;
+}
+
+#kode-teks {
+  flex-grow: 1;
+  font-family: "Delius", cursive;
+  color: #333;
+}
+
+/* Mode password */
+.display.mode-password #kode-teks {
+  font-family: monospace; 
+  letter-spacing: 2px;
+}
+
+/* Button password */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.buttons button {
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d1548f;
+  color: white;
+  cursor: url(assets/icon/love-pointer.cur), auto;
+  transition: background-color 0.3s;
+  font-family: "Delius Unicase", cursive;
+}
+
+.buttons button:hover {
+  background-color: #e56ab5;
+}
+
+/* Section counter sembunyi */
+#section-counter {
+  display: none;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Header calender */
+.header {
+  display: flex;
+  align-items: center;
+  margin: 30px;
+}
+
+.image-header {
+  width: 80px;
+  height: 80px;
+  padding: 4px;
+  border-radius: 50%;
+  border: 3px dashed #e56ab5;
+  margin-right: 40px;
+}
+
+.title-header {
+  background-color: #d1548f;
+  padding: 10px 40px;
+  border-radius: 20px;
+  color: white;
+}
+
+.title-header h1 {
+  margin: 2px;
+  font-size: 24px;
+  font-family: "Rubik Spray Paint", cursive;
+}
+
+/* calender */
+.calender {
+  text-align: center;
+}
+
+/* Linear1 : year, month, date(day) */
+#linear-1 {
+  font-size: 34px;
+  font-weight: bold;
+  color: #d1548f;
+  margin-bottom: 20px;
+  font-family: "Knewave", cursive;
+}
+
+#linear-1 span {
+  margin: 0 5px;
+}
+
+/* Linear2 : hours, minutes, seconds */
+#linear-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.calendertime {
+  background-color: #eee;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.calendertime span {
+  font-size: 74px;
+  font-weight: bold;
+  color: #d1548f;
+  display: block;
+  font-family: "Knewave", cursive;
+}
+
+.calendertime p {
+  font-size: 24px;
+  margin: 5px 0 0;
+  font-family: "Knewave", cursive;
+  color: #df4c71;
+}
+
+/* Button gallery */
+
+.button-gallery {
+  width: auto; /* Lebar otomatis sehingga tidak menempati 100% */
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center;
+  padding: 15px 30px; 
+  background-color: #d1548f;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  font-size: 18px;
+  cursor: url(assets/icon/love-pointer.cur), auto;
+  gap: 8px; 
+  margin-top: 20px;
+  transition: background-color 0.3s;
+  font-family: "Delius Unicase", cursive;
+  text-align: center;
+}
+
+.button-gallery:hover {
+  background-color: #e56ab5;
+}
+
+.button-gallery svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0; 
+}
+
+
+/* Gallery Style */
+.section-gallery {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.title-gallery h1 {
+    font-size: 24px;
+    color: #d1548f;
+    font-family: "Rubik Spray Paint", cursive;
+    margin-bottom: 20px;
+}
+
+.picture {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.button-transparent {
+    background-color: transparent;
+    border: none;
+    color: #d1548f;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: url(assets/icon/love-pointer-q.cur), auto;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: "Delius", cursive;
+}
+
+.button-transparent:hover {
+    background-color: #fab2d4;
+    color: white;
+}
+
+/* Letter style */
+.section-letter {
+    display: none;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.title-letter h1 {
+    font-size: 24px;
+    color: #d1548f;
+    font-family: "Rubik Spray Paint", cursive;
+    margin-bottom: 20px;
+}
+
+.content-letter p {
+    font-size: 16px;
+    color: #333;
+    padding: 8px;
+    border-radius: 30px;
+    border: 1px solid #d1548f;
+    box-shadow: 1px 1px 15px 10px #e98bb7;
+    line-height: 1.6;
+    font-family: "Delius", cursive;
+    text-align: left;
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    width: 370px;
+    height: 400px;
+  }
+
+  /* folders */
+  .folders{
+    display: flex;
+    background-color: #fff;
+    border: 5px solid #e56ab5;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* image folders */
+  .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  /* password */
+  .password {
+    margin-left: 10px;
+  }
+
+  /* display */
+  .display {
+    width: 80%;
+    height: 40px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 18px;
+    margin-bottom: 8px;
+    position: relative;
+  }
+
+  .display svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    color: #d1548f; /* Color icon */
+  }
+
+  /* button password */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+  }
+
+  /* Controls */
+
+  #section-counter {
+    display: none;
+    text-align: center; 
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+    max-width: 340px;
+    width: 100%;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    align-items: center;
+    margin: 3px;
+  }
+  
+  .image-header {
+    width: 50px;
+    height: 50px;
+    padding: 4px;
+    border-radius: 50%;
+    border: 4px dashed #e56ab5;
+    margin-right: 20px;
+  }
+  
+  .title-header {
+    background-color: #d1548f;
+    padding: 6px 20px;
+    border-radius: 20px;
+    color: white;
+  }
+  
+  .title-header h1 {
+    margin: 4px;
+    font-size: 16px;
+    font-family: "Rubik Spray Paint", cursive;
+  }
+
+  
+  /* Linear1 : year, month, date(day) */
+  #linear-1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #d1548f;
+    margin-bottom: 20px;
+    font-family: "Knewave", cursive;
+  }
+  
+  /* Linear2 : hours, minutes, seconds */
+  #linear-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .calendertime {
+    background-color: #eee;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .calendertime span {
+    font-size: 64px;
+    font-weight: bold;
+    color: #d1548f;
+    display: block;
+    font-family: "Knewave", cursive;
+  }
+  
+  .calendertime p {
+    font-size: 16px;
+    margin: 4px 0 0;
+    font-family: "Knewave", cursive;
+    color: #df4c71;
+  }
+
+}

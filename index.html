@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sayang</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Container Folders -->
+    <div class="container">
+        <div class="folders">
+            <div class="image">
+                <img src="https://i.pinimg.com/236x/cb/16/3e/cb163e5cfeb72319a865d791c90fd715.jpg" alt="">
+            </div>
+            <div class="password">
+                <div class="display" id="display">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#000000"
+                        fill="none">
+                        <path
+                            d="M4.26781 18.8447C4.49269 20.515 5.87613 21.8235 7.55966 21.9009C8.97627 21.966 10.4153 22 12 22C13.5847 22 15.0237 21.966 16.4403 21.9009C18.1239 21.8235 19.5073 20.515 19.7322 18.8447C19.879 17.7547 20 16.6376 20 15.5C20 14.3624 19.879 13.2453 19.7322 12.1553C19.5073 10.485 18.1239 9.17649 16.4403 9.09909C15.0237 9.03397 13.5847 9 12 9C10.4153 9 8.97627 9.03397 7.55966 9.09909C5.87613 9.17649 4.49269 10.485 4.26781 12.1553C4.12105 13.2453 4 14.3624 4 15.5C4 16.6376 4.12105 17.7547 4.26781 18.8447Z"
+                            stroke="currentColor" stroke-width="1.5" />
+                        <path d="M7.5 9V6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5V9"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16 15.49V15.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M12 15.49V15.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M8 15.49V15.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                    <span id="kode-teks">Kata sandi</span>
+                </div>
+                <div class="buttons">
+                    <button onclick="addNumber('1')">1</button>
+                    <button onclick="addNumber('2')">2</button>
+                    <button onclick="addNumber('3')">3</button>
+                    <button onclick="addNumber('4')">4</button>
+                    <button onclick="addNumber('5')">5</button>
+                    <button onclick="addNumber('6')">6</button>
+                    <button onclick="addNumber('7')">7</button>
+                    <button onclick="addNumber('8')">8</button>
+                    <button onclick="addNumber('9')">9</button>
+                    <button onclick="addNumber('*')">*</button>
+                    <button onclick="addNumber('0')">0</button>
+                    <button onclick="addNumber('#')">#</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section-Counter -->
+    <div id="section-counter" class="section-counter">
+        <!-- header -->
+        <div class="header">
+            <img src="gallery/pict.jpg"
+                alt="" class="image-header">
+            <div class="title-header">
+                <h1>HAPPY BIRTHDAY SAYANG</h1>
+            </div>
+        </div>
+
+        <!-- Calender -->
+        <div class="calender">
+            <!-- calender: year, mont, date(day) -->
+            <div class="calenders" id="linear-1">
+                <span id="year">0</span>year
+                <span id="month">0</span>month
+            </div>
+
+            <!-- calender: hour, minutes, seconds -->
+            <div class="calenders" id="linear-2">
+                <div class="calendertime">
+                    <span id="date">0</span>
+                    <p>Day</p>
+                </div>
+
+                <div class="calendertime">
+                    <span id="hours">0</span>
+                    <p>Hours</p>
+                </div>
+
+                <div class="calendertime">
+                    <span id="minutes">0</span>
+                    <p>Minutes</p>
+                </div>
+
+                <div class="calendertime">
+                    <span id="seconds">0</span>
+                    <p>Seconds</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- button -->
+        <button class="button-gallery" onclick="showGallery()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" color="#ffffff"
+                fill="none">
+                <path
+                    d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z"
+                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            </svg> LOVEYOUUU SAYANGGG
+        </button>
+    </div>
+
+    <!-- SECTION GALLERY -->
+    <div id="section-gallery" class="section-gallery">
+        <!-- TITTLE GALLERY -->
+        <div class="title-gallery">
+            <h1>Sayanggggkkuuuuu</h1>
+        </div>
+
+        <!-- PICTURE -->
+        <div class="picture">
+            <img src="gallery/pict1.JPG" alt="Foto 1">
+            <img src="gallery/pict2.JPG" alt="Foto 2">
+            <img src="gallery/pict3.JPG" alt="Foto 3">
+            <img src="gallery/pict4.JPG" alt="Foto 4">
+            <img src="gallery/pict5.JPG" alt="Foto 5">
+            <img src="gallery/pict6.JPG" alt="Foto 6">
+        </div>
+
+        <!-- BUTTON -->
+     
+        <button id="hbd" >
+<svg height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 508.4 508.4" xml:space="preserve">
+<g>
+	<path style="fill:#ACD9EA;" d="M491.6,37.4L256,228.2c-0.4,0.4-0.8,0.4-1.2,0.4s-0.8,0-1.2-0.4L17.6,37.4
+		C10.8,44.2,6.4,53.8,6.4,63.8v270c0,10.4,4.4,19.6,11.2,26.8L195.2,217c0.8-0.8,2-0.4,2.8,0.4s0.4,2-0.4,2.8L20.4,364.6
+		c6.4,5.2,14.8,9.6,23.6,9.6h420.8c8.8,0,17.2-4.4,23.6-9.6l-177.2-144c-0.8-0.8-0.8-2.4-0.4-3.2c0.8-0.8,2-1.2,2.8-0.4l177.6,143.6
+		c6.8-6.8,10.8-16.4,10.8-26.8v-270C502.4,53.4,498.4,44.2,491.6,37.4z"/>
+	<path style="fill:#ACD9EA;" d="M254.4,224.2L488.4,35v-0.4c-6.4-5.2-14.8-8.8-23.6-8.8H44c-8.8,0-17.2,3.2-23.6,8.8l0,0
+		L254.4,224.2z"/>
+</g>
+<path style="fill:#CDEEF9;" d="M254.4,224.2L488.4,35v-0.4c-6.4-5.2-14.8-8.8-23.6-8.8H428L254.4,171L75.6,25.8H44
+	c-8.8,0-17.2,3.2-23.6,8.8l0,0L254.4,224.2z"/>
+<circle style="fill:#DF5C4E;" cx="254.8" cy="373.4" r="108.8"/>
+<path style="fill:#F4AEA8;" d="M282,331.4c-10.8,0-20.4,5.6-25.6,14.8c-0.8,1.2-2.8,1.2-3.6,0c-5.6-9.2-15.2-14.8-25.6-14.8
+	c-16.4,0-30,13.6-30,30c0,4,0.8,8,2,11.6c9.2,29.6,49.6,50.4,55.6,53.2c6.4-3.2,46.8-24,55.6-53.2c1.2-3.6,2-7.6,2-11.6
+	C312,345,298.8,331.4,282,331.4z"/>
+<path d="M464.8,379.8h-98.4c-2.4,0-4-1.6-4-4s1.6-4,4-4h98.4c18.8,0,35.6-17.6,35.6-38v-270c0-20-16-36-35.6-36H44
+	c-19.6,0-36,16.4-36,36v270c0,20.4,16.8,38,36,38h98c2.4,0,4,1.6,4,4s-1.6,4-4,4H44c-23.2,0-44-21.6-44-46v-270c0-24,20-44,44-44
+	h420.8c24,0,43.6,19.6,43.6,44v270C508.4,358.6,488.4,379.8,464.8,379.8z"/>
+<path d="M17.6,367c-1.2,0-2.4-0.4-3.2-1.6c-1.2-1.6-1.2-4.4,0.4-5.6L193.6,215c1.6-1.2,4.4-1.2,5.6,0.4c1.2,1.6,1.2,4.4-0.4,5.6
+	L20,365.8C19.2,366.6,18.4,367,17.6,367z"/>
+<path d="M491.6,367c-0.8,0-1.6-0.4-2.4-0.8L310.4,221.4c-1.6-1.2-2-4-0.4-5.6c1.2-1.6,4-2,5.6-0.4l178.8,144.8c1.6,1.2,2,4,0.4,5.6
+	C494,366.6,492.8,367,491.6,367z"/>
+<path d="M254.4,230.6c-0.8,0-1.6-0.4-2.4-0.8L14.8,37.8c-1.6-1.2-2-4-0.4-5.6c1.2-1.6,4-2,5.6-0.4l234.4,190l234.4-190
+	c1.6-1.2,4.4-1.2,5.6,0.4s1.2,4.4-0.4,5.6l-237.2,192C256.4,230.2,255.6,230.6,254.4,230.6z"/>
+<path d="M254.4,175.4c-0.8,0-1.6-0.4-2.4-0.8L70,27.4c-1.6-1.2-2-4-0.4-5.6c1.2-1.6,4-2,5.6-0.4l179.6,145.2l22-17.6
+	c1.6-1.2,4.4-1.2,5.6,0.4c1.2,1.6,1.2,4.4-0.4,5.6l-24.4,19.6C256.4,175.4,255.6,175.4,254.4,175.4z"/>
+<path d="M310,131c-1.2,0-2.4-0.4-3.2-1.6c-1.2-1.6-1.2-4.4,0.4-5.6L434,21.4c1.6-1.2,4.4-1.2,5.6,0.4c1.2,1.6,1.2,4.4-0.4,5.6
+	L312.4,129.8C311.6,130.6,310.8,131,310,131z"/>
+<path d="M254.4,488.6c-63.2,0-114.8-51.6-114.8-114.8c0-63.2,51.6-114.8,114.8-114.8c22,0,43.6,6.4,62,18.4c2,1.2,2.4,3.6,1.2,5.6
+	s-3.6,2.4-5.6,1.2c-17.2-11.2-37.2-16.8-57.6-16.8c-58.8,0-106.8,48-106.8,106.8S195.6,481,254.4,481s106.8-48,106.8-106.8
+	c0-23.2-7.2-45.2-21.2-63.6c-1.2-1.6-0.8-4.4,0.8-5.6s4.4-0.8,5.6,0.8c14.8,20,22.8,43.6,22.8,68.4C369.6,437,318,488.6,254.4,488.6
+	z"/>
+<path d="M254.4,433c-0.4,0-1.2,0-1.6-0.4c-2.4-1.2-62-29.2-62-70.8c0-20,16-36,36-36c10.8,0,20.8,4.8,27.6,12.8
+	c6.8-8,16.8-12.8,27.6-12.8c20,0,36,16,36,36c0,42-59.2,70-62,70.8C255.6,433,255.2,433,254.4,433z M227.2,333.4
+	c-15.6,0-28,12.4-28,28c0,33.2,46,58,55.6,62.8c9.6-4.8,55.6-30,55.6-62.8c0-15.6-12.4-28-28-28c-10,0-18.8,5.2-24,13.6
+	c-0.8,1.2-2,2-3.6,2l0,0c-1.6,0-2.8-0.8-3.6-2C246,338.6,237.2,333.4,227.2,333.4z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+</svg>
+       Birthday Card
+        </button>
+    </div>
+
+    <!-- SECTION-LETTER -->
+    <div id="section-letter" class="section-letter">
+        <!-- Título de la carta -->
+        <div class="title-letter">
+        </div>
+
+        <!-- content-letter -->
+        <div class="content-letter">
+        </div>
+
+        
+    <script src="script.js"></script>
+</body>
+
+</html>
