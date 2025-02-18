@@ -113,9 +113,6 @@ function showGallery() {
     tes.addEventListener("click", function(){
         window.location.href="hbd.html";
     });
-
-
-   
     
     // HBD
 

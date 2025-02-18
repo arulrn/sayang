@@ -1,11 +1,9 @@
 flag=1
 function f1(){
-    alert("Loveyouuuuuu sayanggkkuuuuuuu😍")
-alert("Cintaaaaaakkkkkkuuuuuuuu😘")
-alert("Manissssskkkkuuuuuuuuuu🥰")
-alert("Bidaaadaarriiiikkkkuuuuuuu😋")
-alert("Semessttaaaaakkkuuuuuuu ❤️")
-    window.location.href="index.html";
+        let play = document.getElementById("im");
+            let audio = new Audio('' + linkmp3.src);
+            audio.play()
+            play.addEventListener("click", playMusic);
 }
 
 window.FontAwesomeKitConfig = {"id":87915113,"version":"5.15.4","token":"7068afb220","method":"css","baseUrl":"https://ka-f.fontawesome.com","license":"free","asyncLoading":{"enabled":false},"autoA11y":{"enabled":true},"baseUrlKit":"https://kit.fontawesome.com","detectConflictsUntil":null,"iconUploads":{},"minify":{"enabled":true},"v4FontFaceShim":{"enabled":true},"v4shim":{"enabled":true},"v5FontFaceShim":{"enabled":false}};
