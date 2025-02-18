@@ -3,6 +3,7 @@ function f1(){
         let play = document.getElementById("im");
             let audio = new Audio('' + linkmp3.src);
             audio.play()
+            lopdeg.style="transition:all .8s ease;transform:scale(15);opacity:0";
             play.addEventListener("click", playMusic);
 }
 

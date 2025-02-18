@@ -178,3 +178,9 @@ p{
 .lovein svg{width:30px;height:30px;fill:#fefefe}
 
 
+@media (max-width: 768px) {
+    .container {
+      width: 370px;
+      height: 400px;
+    }
+}
