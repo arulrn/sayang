@@ -10,12 +10,12 @@ function addNumber(number) {
     const display = document.querySelector('.display');
 
     // Jika teks saat ini adalah “Kata Sandi”, kita hapus.
-    if (kodeTeks.textContent === 'Kata sandi') {
+    if (kodeTeks.textContent === 'Birthday Date') {
         kodeTeks.textContent = '';
     }
 
     // Menambahkan nomor ke teks (dalam mode kata sandi)
-    kodeTeks.textContent += '*'; // Kami menggunakan titik sebagai karakter kata sandi.
+    kodeTeks.textContent += '❤️'; // Kami menggunakan titik sebagai karakter kata sandi.
 
     // Menyimpan angka yang sebenarnya dalam variabel
     sandiDimasukkan += number;
@@ -28,8 +28,8 @@ function addNumber(number) {
         if (sandiDimasukkan === KATASANDI) {
             showCounter(); // Tampilkan penghitung jika kata sandi benar
         } else {
-            alert("Kata sandi salah. Coba lagi."); // Tampilkan pesan kesalahan
-            kodeTeks.textContent = 'Kata sandi'; // Setel ulang teks
+            alert("Birthday Date salah. Coba lagi masa lupa ulang tahun sendiri sayangggggggg."); // Tampilkan pesan kesalahan
+            kodeTeks.textContent = 'Birthday Date'; // Setel ulang teks
             display.classList.remove('mode-password'); // Menghapus mode kata sandi
             sandiDimasukkan = ""; // Setel ulang kata sandi yang dimasukkan
         }
